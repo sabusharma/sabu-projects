@@ -1,0 +1,53 @@
+
+body
+{
+    background-color:#003366;
+    color:#ffffff;    
+    }
+.txtcenter
+{ width: 61%;
+  margin-left: auto; 
+  margin-right: auto; 
+} 
+.txtright
+{
+    text-align:right;
+}
+            
+table     
+{ 
+    border-style:none;             
+    margin-left: auto;
+    margin-right: auto;    
+    color:#003366; 
+    font-family:Verdana,Arial, Times New Roman ;
+    background-color:#ffffff; 
+    width:95%;
+             
+}
+tr
+{
+    
+    border-bottom-color:Gray;
+    border-bottom-width:thin;
+    border-bottom-style:solid;
+    border-right-style:none;
+    border-left-style:none;
+    
+    
+}
+
+
+h1,h2        
+{ 
+    text-align:center;
+      
+}
+
+a
+{
+    
+    font-size:9pt;
+    
+}
+

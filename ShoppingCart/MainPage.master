@@ -1,0 +1,45 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MainPage.master.cs" Inherits="MainPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Online Shopping Center</title>
+    <link rel="Stylesheet" href="style.css" />
+</head>
+<body style="background-color: #003366">
+<body>
+    <form id="form1" runat="server">
+    Online Shopping Center<br />
+    <table style="width:100%;">
+        <tr>
+            <td>
+                &nbsp;</td>
+            <td>
+                <asp:HyperLink ID="hyperlinkHome" runat="server" NavigateUrl="~/Default.aspx">Home</asp:HyperLink>
+            </td>
+            <td>
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;</td>
+            <td>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"/>
+                    </td>
+            <td>
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;</td>
+            <td>
+                Privacy Statement Contact Us</td>
+            <td>
+                &nbsp;</td>
+        </tr>
+    </table>
+                    </form>
+                        
+</body>
+</html>

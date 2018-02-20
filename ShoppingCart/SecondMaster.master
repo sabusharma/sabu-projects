@@ -1,0 +1,93 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="SecondMaster.master.cs" Inherits="SecondMaster" %>
+
+<%@ Register src="TodayDate.ascx" tagname="TodayDate" tagprefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Seattle Online Book Store</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .styleA
+       {
+           width: 80px;
+           vertical-align: top;
+           height:100%;
+       }
+               
+       .styleC
+       {
+           height: 100%;
+           vertical-align: top;
+           width:inherit;
+       }
+              
+       
+        .style1
+        {
+            width: 150px;
+            vertical-align: top;
+            height: 100%;
+        }
+              
+       
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table width="100%">
+        <tr><td valign="top">
+            <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" 
+                StaticDisplayLevels="6" StaticSubMenuIndent="" 
+            Orientation="Horizontal">
+            </asp:Menu>
+             <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+            </td>
+            
+         
+            <td>
+           
+                <asp:Image ID="Image2" runat="server" Height="82px" 
+                ImageUrl="~/Images/logo.jpg" Width="100%" />
+            </td>
+        </tr>
+   <tr>
+   <td colspan="2">
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+           
+        
+        </asp:ContentPlaceHolder>
+        </td>
+    </tr>
+    <tr>
+    <td>
+                 <a href="About.aspx">About Us</a>&nbsp;&nbsp;
+                <a href="Contact.aspx">  Contact Us </a>&nbsp;&nbsp; 
+                <a href="privacy.aspx"> Privacy Statement</a>&nbsp;&nbsp;
+             
+        
+            </td>
+            <td style="text-align:right">
+                 
+                
+        
+                <uc1:TodayDate ID="TodayDate1" runat="server" />
+                 
+                
+        
+            </td>
+            </tr>
+            <tr>
+            <td colspan="2" style="text-align:center">
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/us/"><br /><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/3.0/us/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/us/">Creative Commons Attribution-NonCommercial-NoDerivs 3.0 United States License</a>.
+         </td>
+            
+            </tr>
+    </table>
+    </form>
+</body>
+</html>
